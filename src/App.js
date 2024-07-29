@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Topbar from "./pages/Topbar";
 import Monitor from "./pages/Monitor";
 import Sidebar from "./pages/Sidebar";
+import ManageAgent from "./pages/ManageAgent";
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
         <Sidebar />
         <div className="flex-1 flex flex-col">
           <Topbar />
-          <Monitor />
+          <Routes>
+            <Route path="/" element={<Monitor />} />
+            <Route path="/agents" element={<ManageAgent />} />
+          </Routes>
         </div>
       </div>
     </Router>
