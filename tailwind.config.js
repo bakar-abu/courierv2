@@ -4,7 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "background":"#101010",
         "light-grey": "#00000012",
+        "border-grey": "#1C1C1C",
+        "button-gray": "#1A1A1A",
+        "button-gradient":"#101010"
       },
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],
